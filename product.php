@@ -140,7 +140,7 @@ $result = mysqli_query($koneksi, $sql);
                         echo '<p>';
                         echo '<a href="edit.php?nama_barang=' . urlencode($row['nama_barang']) . '&harga=' . $row['harga'] . '&detail_produk=' . urlencode($row['detail_produk']) . '&spesifikasi=' . urlencode($row['spesifikasi']) . '&gambar=' . urlencode($row['gambar']) . '"" class="icon"><i class="icon-edit"></i></a>';
                         echo '<a href="process/delete.php?nama_barang=' . $row['nama_barang'] . '" onclick="return confirmDelete();" class="icon"><i class="icon-trash"></i></a>';
-                        echo '<a href="single.php" class="icon"><i class="icon-eye"></i></a>';
+                        echo '<a href="single.php?nama_barang=' . $row['nama_barang'] . '"= class="icon"><i class="icon-eye"></i></a>';
                         echo '</p>';
                         echo '</div>';
                         echo '</div>';
